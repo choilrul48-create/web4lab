@@ -1,0 +1,243 @@
+@import url("https://googleapis.com");
+@import url("https://googleapis.com");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+}
+
+#container {
+  width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 0 1em #cccccc;
+}
+
+/* header */
+header {
+  padding: 20px;
+}
+
+header h1 {
+  margin: 20px 10px;
+  color: #b5b5b5;
+}
+/* navigation */
+nav {
+  display: block;
+  background-color: #1f5faa;
+}
+nav a {
+  padding: 15px 30px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active,
+nav a:hover {
+  background-color: #2b83ea;
+}
+
+/* Hero Panel */
+#hero {
+  background-color: #e4e4e5;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+}
+#hero h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+#hero p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+/* main content */
+#wrapper {
+  margin: 0;
+}
+#main {
+  float: left;
+  width: 640px;
+  padding: 20px;
+}
+/* sidebar area */
+#sidebar {
+  float: left;
+  width: 260px;
+  padding: 20px;
+}
+/* widget */
+.widget-box {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+.widget-box .title {
+  padding: 10px 16px;
+  background-color: #428bca;
+  color: #fff;
+}
+.widget-box ul {
+  list-style-type: none;
+}
+.widget-box li {
+  border-bottom: 1px solid #eee;
+}
+.widget-box li a {
+  padding: 10px 16px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.widget-box li:hover a {
+  background-color: #eee;
+}
+.widget-box p {
+  padding: 15px;
+  line-height: 25px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  background-color: #1d1d1d;
+  padding: 20px;
+  color: #eee;
+}
+/* box */
+.box {
+  display: block;
+  float: left;
+  width: 33.333333%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0 10px;
+  text-align: center;
+}
+.box h3 {
+  margin: 15px 0;
+}
+.box p {
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+box img {
+  border: 0;
+  vertical-align: middle;
+}
+.image-circle {
+  border-radius: 50%;
+}
+.row {
+  margin: 0 -10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.row:after,
+.row:before,
+.entry:after,
+.entry:before {
+  content: "";
+  display: table;
+}
+.row:after,
+.entry:after {
+  clear: both;
+}
+.divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 40px 0;
+  clear: both; /* Tambahan: Penting untuk merapikan efek float di atasnya */
+}
+
+.entry {
+  margin: 15px 0;
+}
+
+.entry h2 {
+  margin-bottom: 20px;
+}
+
+.entry p {
+  line-height: 25px;
+  text-align: justify; /* Opsional: Membuat teks rata kanan-kiri seperti di gambar */
+}
+
+/* ARTIKEL KIRI (Default) */
+.entry img {
+  float: left;
+  border-radius: 5px;
+  margin-right: 15px; /* Jarak teks di sebelah kanan gambar */
+  margin-bottom: 10px;
+}
+
+/* ARTIKEL KANAN (Khusus kelas .right-img) */
+.entry .right-img {
+  float: right;
+  margin-right: 0; /* Menghapus margin kanan default */
+  margin-left: 15px; /* Tambahan: Memberi jarak teks di sebelah kiri gambar */
+  margin-bottom: 10px;
+}
+.FOTO {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.kontak {
+  display: flex; /* Mengaktifkan sistem layout Flexbox pada footer */
+  flex-direction: row; /* Menyusun elemen footer dari atas ke bawah */
+  width: 100%; /* Lebar footer penuh dari kiri ke kanan */
+  text-align: center; /* Menengahkan teks hak cipta di dalam footer */
+  padding: 15px; /* Ruang dalam atas-bawah-kiri-kanan pada footer */
+  border-top: 1px solid #1f6370; /* Memberikan garis pembatas tipis di atas footer */
+  box-sizing: border-box; /* Memastikan padding tidak merusak ukuran lebar footer */
+  background-color: #e4dcdc; /* Warna latar belakang footer disamakan dengan body */
+  margin-top: 10px; /* Memaksa footer tetap berada di bawah halaman */
+  gap: 10px; /* Memberikan jarak antar elemen di dalam footer */
+  justify-content: center; /* Menengahkan seluruh isi footer secara horizontal */
+}
+/* Styling untuk Form Contact */
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
